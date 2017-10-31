@@ -1,0 +1,2 @@
+# Find IP of router
+route get default | grep gateway

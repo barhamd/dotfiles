@@ -1,0 +1,3 @@
+# View payment details from production console:
+  include PayPal::SDK::REST
+  Payment.find( [payment_id] )

@@ -1,0 +1,16 @@
+# Ignore everything
+/*
+
+# Except these files
+!.ackrc
+!.bash_profile
+!.bashrc
+!.cheat
+!.git-completion.bash
+!.git-prompt.sh
+!.gitconfig
+!.gitignore
+!.gitignore_global
+!.profile
+!.vimrc
+!.zshrc

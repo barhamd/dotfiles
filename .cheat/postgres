@@ -1,0 +1,24 @@
+# Start Server:
+postgres -D /usr/local/var/postgres
+
+# Dump database
+pg_dump [connection-option...] [option...] [dbname]
+
+pg_dump [dbname] > [output name].psql --verbose
+
+# Dump specific table from database
+pg_dump -t [table name] [dbname] > [output name].psql --verbose
+
+# List all databases
+\list
+
+# Create new database
+CREATE DATABASE [dbname];
+
+# Select database
+\connect [dbname]
+or
+\c [dbname]
+
+# List all tables in current database
+\dt
