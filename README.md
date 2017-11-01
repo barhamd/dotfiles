@@ -1,3 +1,4 @@
 # Installation
 
-`ln -s dotfiles/.{thing} ~/.{thing}`
+`cd dotfiles`
+`make`
