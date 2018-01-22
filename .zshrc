@@ -121,6 +121,7 @@ export JEKYLL_ENV=development
 #export PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:~/bin:$PATH # Put /usr/bin at the beginning to use annotate gem. See here: http://pivotallabs.com/annotate-2-4-0-released/
 export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:~/bin:$PATH # Switched places of /usr/local/bin and /usr/bin. This satisfies homebrew AND annotate.
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/home/devin/.local/bin:$PATH"
 
 function serve {
     port="${1:-3000}"

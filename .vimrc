@@ -22,6 +22,10 @@ let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
 Plugin 'othree/html5-syntax.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'tomlion/vim-solidity'
+Plugin 'tpope/vim-fugitive'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -73,6 +77,8 @@ set laststatus=2
 colorscheme aqua
 
 syntax enable
+
+runtime macros/matchit.vim
 
 set number
 set relativenumber
