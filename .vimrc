@@ -26,6 +26,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'tomlion/vim-solidity'
 Plugin 'tpope/vim-fugitive'
+Plugin 'posva/vim-vue'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -81,7 +82,6 @@ syntax enable
 runtime macros/matchit.vim
 
 set number
-set relativenumber
 
 set nowrap
 
