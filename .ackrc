@@ -1,2 +1,3 @@
 --ignore-dir=log
 --color-match=magenta
+--ignore-dir=public

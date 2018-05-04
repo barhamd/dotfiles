@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/devin/programming/mei/lifeoptions_rewrite/_site'
 let g:netrw_dirhist_2='/Users/devin/programming/mei/blog_post/views'
 let g:netrw_dirhist_3='/Users/devin/.vim'
+let g:netrw_dirhist_4='/Users/devin/programming/contecht/orphanhelp/orphanhelp.front/src/services'

@@ -20,7 +20,11 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
-Plugin 'othree/html5-syntax.vim'
+Plugin 'othree/html5.vim'
+"Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'mxw/vim-jsx'
+Plugin 'sophacles/vim-processing'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -74,7 +78,6 @@ colorscheme aqua
 syntax enable
 
 set number
-set relativenumber
 
 set nowrap
 
@@ -89,7 +92,6 @@ set softtabstop=2
 
 set mouse=a
 
-autocmd! BufNewFile,BufRead *.pde setlocal filetype=arduino
 autocmd! BufNewFile,BufRead *.ino setlocal filetype=arduino
 autocmd! BufNewFile,BufRead *.md  setlocal filetype=markdown
 autocmd! BufNewFile,BufRead *.ejs setlocal filetype=html

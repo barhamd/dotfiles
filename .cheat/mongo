@@ -1,0 +1,7 @@
+# Search by Object _id
+
+db.test.find({"_id" : ObjectId("4ecc05e55dd98a436ddcc47c")})
+
+# Edit and save items
+
+db.places.find().forEach(function(i){ i.types = []; i.types.push(i.type); db.places.save(i)})
