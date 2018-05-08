@@ -20,11 +20,13 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
+
 Plugin 'othree/html5.vim'
 "Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mxw/vim-jsx'
 Plugin 'sophacles/vim-processing'
+Plugin 'leafgarland/typescript-vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
