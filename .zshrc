@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# ghi credentials
+source ~/.ghi
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -117,13 +120,14 @@ alias ree='rvm use ree-1.8.7' # Rvm isn't playing nicely right now. This is a sh
 # Set Jekyll Environment
 export JEKYLL_ENV=development
 
+# GeoServer config
+export GEOSERVER_HOME=/usr/share/geoserver
+
+# As suggested by @climagic
+PROMPT_COMMAND='[ $? -eq 0 ] || printf "(╯°□°）╯︵ ┻━┻\n"' 
+
 #export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH # Added so homebrew would stop yelling at me.
 #export PATH=/usr/bin:/usr/local/bin:/usr/local/sbin:~/bin:$PATH # Put /usr/bin at the beginning to use annotate gem. See here: http://pivotallabs.com/annotate-2-4-0-released/
 export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:~/bin:$PATH # Switched places of /usr/local/bin and /usr/bin. This satisfies homebrew AND annotate.
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/home/devin/.local/bin:$PATH"
-
-function serve {
-    port="${1:-3000}"
-    ruby -run -e httpd . -p $port
-  }

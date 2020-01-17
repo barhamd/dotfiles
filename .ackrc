@@ -1,3 +1,7 @@
 --ignore-dir=log
 --color-match=bright_cyan
 --ignore-dir=dist
+--ignore-dir=build
+--ignore-dir=orphanhelp_website
+--ignore-dir=styleguide
+--ignore-file=is:Cesium.js

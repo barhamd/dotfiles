@@ -7,6 +7,7 @@
   ci = commit -m
   br = branch
   co = checkout
+  ruo = remote update origin
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 [credential]
@@ -22,3 +23,5 @@
 [core]
 	excludesfile = /home/devin/.gitignore_global
 	autocrlf = input
+[github]
+	user = barhamd@gmail.com

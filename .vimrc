@@ -27,6 +27,12 @@ Plugin 'mxw/vim-jsx'
 Plugin 'tomlion/vim-solidity'
 Plugin 'tpope/vim-fugitive'
 Plugin 'posva/vim-vue'
+autocmd FileType vue syntax sync fromstart
+let g:vue_disable_pre_processors=1
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+
+Plugin 'vim/killersheep'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -75,7 +81,9 @@ autocmd VimEnter * call OpenNERDTree()
 " Vim-Airline
 set laststatus=2
 
-colorscheme aqua
+" colorscheme aqua
+" colorscheme solarized
+" colorscheme zenburn
 
 syntax enable
 
@@ -96,13 +104,27 @@ set softtabstop=2
 
 set mouse=a
 
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
+autocmd Filetype typescript setlocal ts=2 sw=2 sts=2
+autocmd BufRead,BufNewFile */home/devin/programming/Land-Portal/* setlocal ts=4 sw=4 sts=4
+autocmd BufRead,BufNewFile */home/devin/programming/Metabuild/metabuild-converter/* setlocal ts=4 sw=4 sts=4
 autocmd! BufNewFile,BufRead *.pde setlocal filetype=arduino
 autocmd! BufNewFile,BufRead *.ino setlocal filetype=arduino
 autocmd! BufNewFile,BufRead *.md  setlocal filetype=markdown
 autocmd! BufNewFile,BufRead *.ejs setlocal filetype=html
 
-" Remove p tags within li
-function RemoveP()
-  %s/<li><p>/<li>/g
-  %s/<\/p><\/li>/<\/li>/g
-endfunction
+func! WordProcessor()
+  " movement changes
+  map j gj
+  map k gk
+  " formatting text
+  setlocal formatoptions=1
+  setlocal wrap
+  setlocal linebreak
+  " spelling and thesaurus
+  setlocal spell spelllang=en_us
+  set thesaurus+=/home/test/.vim/thesaurus/mthesaur.txt
+  " complete+=s makes autocompletion search the thesaurus
+  set complete+=s
+endfu
+com! WP call WordProcessor()
