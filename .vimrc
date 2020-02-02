@@ -82,8 +82,9 @@ autocmd VimEnter * call OpenNERDTree()
 set laststatus=2
 
 " colorscheme aqua
-" colorscheme solarized
+colorscheme solarized
 " colorscheme zenburn
+" colorscheme Atelier_ForestLight
 
 syntax enable
 
@@ -103,6 +104,8 @@ set shiftwidth=2
 set softtabstop=2
 
 set mouse=a
+
+imap jj <Esc> " pressing jj escapes insert mode
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 autocmd Filetype typescript setlocal ts=2 sw=2 sts=2
